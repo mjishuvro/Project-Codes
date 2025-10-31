@@ -1,0 +1,53 @@
+// Created     : 2023-05-30 9:17:24
+// DLL         : C:\Program Files (x86)\DHI\MIKE Zero\2023\bin\x64\pfs2004.dll
+// Version     : 21.0.0.16308
+
+[m21hd_tideanalysisheights]
+   CLSID = 'TideAnalysisHeights.dll'
+   TypeName = 'm21hd_tideanalysisheights'
+   CREATEDTIME = '2023-05-30T09:16:28'
+   MODIFIEDTIME = '2023-05-30T09:16:28'
+   NOTES = ''
+   [Setup]
+      Name = 'Setup Name'
+      [InputFile]
+         FileType = 0
+         [DataFile]
+            FileName = |.\SW5 (Madaripur).dfs0|
+            ItemNumber = 1
+         EndSect  // DataFile
+
+      EndSect  // InputFile
+
+      [SubSeries]
+         SUB_SERIES_START = 0
+         SUB_SERIES_LAST = 473374
+      EndSect  // SubSeries
+
+      [GeneralParameters]
+         Method = 0
+         S2M2Factor = 0.0
+         O1K1Factor = 0.0
+         M2S2Difference = 0.0
+         K1O1Difference = 0.0
+         Latitude = 23.09
+         Rayleigh = 1.0
+      EndSect  // GeneralParameters
+
+      [InferredConstituents]
+      EndSect  // InferredConstituents
+
+      [AdditionalConstituents]
+      EndSect  // AdditionalConstituents
+
+      [Output]
+         ConstituentsFileEnabled = 1
+         ConstituentsFileName = |.\test.con|
+         ResidualDataEnabled = 0
+         ResidualFileName = ||
+      EndSect  // Output
+
+   EndSect  // Setup
+
+EndSect  // m21hd_tideanalysisheights
+
