@@ -1,0 +1,701 @@
+// Created     : 2023-09-15 11:30:50
+// DLL         : C:\Program Files (x86)\DHI\MIKE Zero\2023\bin\x64\pfs2004.dll
+// Version     : 21.0.0.16308
+
+[MIKE_RR]
+   version_no = 101
+   [CatchList]
+      [Catchment]
+         Catchment_Name = 'K_C-1'
+         Catchment_Model = 'NAM'
+         Catchment_Area = 0.96
+         Number_ID = 0
+         Additional_output = true
+         Calibration_plot = false
+      EndSect  // Catchment
+
+      [Catchment]
+         Catchment_Name = 'K_C-2'
+         Catchment_Model = 'NAM'
+         Catchment_Area = 0.63
+         Number_ID = 0
+         Additional_output = true
+         Calibration_plot = false
+      EndSect  // Catchment
+
+   EndSect  // CatchList
+
+   [CombinedList]
+   EndSect  // CombinedList
+
+   [ParameterList]
+      [NAM_Parameters]
+         [SurfaceRootzone]
+            U_Max = 10
+            L_Max = 100
+            CQOF = 0.5
+            CKIF = 1000
+            CK1 = 10
+            CK12_DIF = false
+            CK2 = 10
+            TOF = 0
+            TIF = 0
+         EndSect  // SurfaceRootzone
+
+         [GroundWater]
+            IS_CAREA = false
+            CAREA = 1
+            TG = 0
+            IS_SY = false
+            S_Y = 0.1
+            CKBF = 2000
+            IS_GWLBF0 = false
+            GWLBF0 = 10
+            GWLBF0_Season = false
+            GWLBF_min = 0
+            GWLBF = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+            Is_GWLBF1 = false
+            GWLBF1 = 0
+            GWPUMP_Season = false
+            GWPUMP_File = false
+            GWPUMP = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            GW_LOWER = false
+            CQLOW = 0
+            CKLOW = 10000
+         EndSect  // GroundWater
+
+         [SnowMelt]
+            SNOWused = false
+            C1_SNOW = 2
+            T0_SNOW = 0
+            C2_Season = false
+            C2_File = false
+            C2_SNOW = 1, 1.5, 2, 3, 4, 4.5, 4.5, 4, 3, 2, 1.5, 1
+            C_RAIN_USED = false
+            C_RAIN = 0
+            C_RADIATION_Used = false
+            C_RADIATION = 0
+            SNOW_Zones = false
+            [Zonelist]
+               NO_ZONES = 10
+               T_ELEVREF = 0
+               T_DRYCHECK = false
+               T_LAPSEDRY = -0.6
+               T_WETCHECK = false
+               T_LAPSEWET = -0.4
+               P_CHECK = false
+               P_ELEVREF = 0
+               P_LAPSE = 2
+               [Zone]
+                  ZONE_ELEVATION = 100
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 200
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 300
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 400
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 500
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 600
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 700
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 800
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 900
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 1000
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+            EndSect  // Zonelist
+
+         EndSect  // SnowMelt
+
+         [Irrigation]
+            IRRIGATION = false
+            K0INF = 1
+            PCT_LGW = 50
+            PCT_LRI = 50
+            PCT_EXT = 0
+            EXT_RIVERNAME = ''
+            EXT_RIVERCHAIN = 0
+            IRR_CROPLOSSES = false
+            CROP_COEF = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+            LOSS_GRW = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            LOSS_OF = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            LOSS_EVAP = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+         EndSect  // Irrigation
+
+         [InitialCondition]
+            U_Ini = 0
+            L_Ini = 0
+            OF_Ini = 0
+            IF_Ini = 0
+            GWL_Ini = 0
+            BFlow = 0
+            Snow_Ini = 0
+            [Zonelist]
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+            EndSect  // Zonelist
+
+         EndSect  // InitialCondition
+
+         [AutoCal]
+            AUTOCAL = false
+            U_MAX_fit = true
+            U_Max_upper = 20
+            U_Max_lower = 10
+            L_MAX_fit = true
+            L_Max_upper = 300
+            L_Max_lower = 100
+            CQOF_fit = true
+            CQOF_upper = 1
+            CQOF_lower = 0.1
+            CKIF_fit = true
+            CKIF_upper = 1000
+            CKIF_lower = 200
+            CK1_fit = true
+            CK1_upper = 50
+            CK1_lower = 10
+            TOF_fit = true
+            TOF_upper = 0.99
+            TOF_lower = 0
+            TIF_fit = true
+            TIF_upper = 0.99
+            TIF_lower = 0
+            TG_fit = true
+            TG_upper = 0.99
+            TG_lower = 0
+            CKBF_fit = true
+            CKBF_upper = 4000
+            CKBF_lower = 1000
+            CK2_fit = false
+            CK2_upper = 50
+            CK2_lower = 10
+            CQLOW_fit = false
+            CQLOW_upper = 100
+            CQLOW_lower = 1
+            CKLOW_fit = false
+            CKLOW_upper = 30000
+            CKLOW_lower = 1000
+            WBL = true
+            RMSE = true
+            Peak_flow_RMSE = false
+            Low_flow_RMSE = false
+            Peak_flow_min = 0
+            Low_flow_max = 0
+            Maximum_evaluation = 2000
+            Initial_excluded = 0
+         EndSect  // AutoCal
+
+      EndSect  // NAM_Parameters
+
+      [NAM_Parameters]
+         [SurfaceRootzone]
+            U_Max = 10
+            L_Max = 100
+            CQOF = 0.5
+            CKIF = 1000
+            CK1 = 10
+            CK12_DIF = false
+            CK2 = 10
+            TOF = 0
+            TIF = 0
+         EndSect  // SurfaceRootzone
+
+         [GroundWater]
+            IS_CAREA = false
+            CAREA = 1
+            TG = 0
+            IS_SY = false
+            S_Y = 0.1
+            CKBF = 2000
+            IS_GWLBF0 = false
+            GWLBF0 = 10
+            GWLBF0_Season = false
+            GWLBF_min = 0
+            GWLBF = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+            Is_GWLBF1 = false
+            GWLBF1 = 0
+            GWPUMP_Season = false
+            GWPUMP_File = false
+            GWPUMP = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            GW_LOWER = false
+            CQLOW = 0
+            CKLOW = 10000
+         EndSect  // GroundWater
+
+         [SnowMelt]
+            SNOWused = false
+            C1_SNOW = 2
+            T0_SNOW = 0
+            C2_Season = false
+            C2_File = false
+            C2_SNOW = 1, 1.5, 2, 3, 4, 4.5, 4.5, 4, 3, 2, 1.5, 1
+            C_RAIN_USED = false
+            C_RAIN = 0
+            C_RADIATION_Used = false
+            C_RADIATION = 0
+            SNOW_Zones = false
+            [Zonelist]
+               NO_ZONES = 10
+               T_ELEVREF = 0
+               T_DRYCHECK = false
+               T_LAPSEDRY = -0.6
+               T_WETCHECK = false
+               T_LAPSEWET = -0.4
+               P_CHECK = false
+               P_ELEVREF = 0
+               P_LAPSE = 2
+               [Zone]
+                  ZONE_ELEVATION = 100
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 200
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 300
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 400
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 500
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 600
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 700
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 800
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 900
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+               [Zone]
+                  ZONE_ELEVATION = 1000
+                  ZONE_AREA = 0
+                  ZONE_MINSNOW = 100
+                  ZONE_MAXSNOW = 10000
+                  ZONE_MAXWATER = 0
+                  ZONE_TDRYCOR = 0
+                  ZONE_TWETCOR = 0
+                  ZONE_PCOR = 0
+               EndSect  // Zone
+
+            EndSect  // Zonelist
+
+         EndSect  // SnowMelt
+
+         [Irrigation]
+            IRRIGATION = false
+            K0INF = 1
+            PCT_LGW = 50
+            PCT_LRI = 50
+            PCT_EXT = 0
+            EXT_RIVERNAME = ''
+            EXT_RIVERCHAIN = 0
+            IRR_CROPLOSSES = false
+            CROP_COEF = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+            LOSS_GRW = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            LOSS_OF = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            LOSS_EVAP = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+         EndSect  // Irrigation
+
+         [InitialCondition]
+            U_Ini = 0
+            L_Ini = 0
+            OF_Ini = 0
+            IF_Ini = 0
+            GWL_Ini = 0
+            BFlow = 0
+            Snow_Ini = 0
+            [Zonelist]
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+               [Zone]
+                  Snow_Ini = 0
+                  Water_Ini = 0
+               EndSect  // Zone
+
+            EndSect  // Zonelist
+
+         EndSect  // InitialCondition
+
+         [AutoCal]
+            AUTOCAL = false
+            U_MAX_fit = true
+            U_Max_upper = 20
+            U_Max_lower = 10
+            L_MAX_fit = true
+            L_Max_upper = 300
+            L_Max_lower = 100
+            CQOF_fit = true
+            CQOF_upper = 1
+            CQOF_lower = 0.1
+            CKIF_fit = true
+            CKIF_upper = 1000
+            CKIF_lower = 200
+            CK1_fit = true
+            CK1_upper = 50
+            CK1_lower = 10
+            TOF_fit = true
+            TOF_upper = 0.99
+            TOF_lower = 0
+            TIF_fit = true
+            TIF_upper = 0.99
+            TIF_lower = 0
+            TG_fit = true
+            TG_upper = 0.99
+            TG_lower = 0
+            CKBF_fit = true
+            CKBF_upper = 4000
+            CKBF_lower = 1000
+            CK2_fit = false
+            CK2_upper = 50
+            CK2_lower = 10
+            CQLOW_fit = false
+            CQLOW_upper = 100
+            CQLOW_lower = 1
+            CKLOW_fit = false
+            CKLOW_upper = 30000
+            CKLOW_lower = 1000
+            WBL = true
+            RMSE = true
+            Peak_flow_RMSE = false
+            Low_flow_RMSE = false
+            Peak_flow_min = 0
+            Low_flow_max = 0
+            Maximum_evaluation = 2000
+            Initial_excluded = 0
+         EndSect  // AutoCal
+
+      EndSect  // NAM_Parameters
+
+   EndSect  // ParameterList
+
+   [TimeseriesList]
+      Max_Comb_Number = 8
+   EndSect  // TimeseriesList
+
+   [BasinStationList]
+      BasinListCount = 0
+   EndSect  // BasinStationList
+
+   [UHM_Common_Parameters]
+      [EnlargeRatio_ParameterList]
+      EndSect  // EnlargeRatio_ParameterList
+
+      [NakayasuLoss_ParameterList]
+      EndSect  // NakayasuLoss_ParameterList
+
+      [F1RsaLoss_ParameterList]
+      EndSect  // F1RsaLoss_ParameterList
+
+      [QLSF_ParameterList]
+      EndSect  // QLSF_ParameterList
+
+      [StartEvent]
+         ApplyStart = false
+         Start = 2023, 9, 14, 14, 54, 1
+      EndSect  // StartEvent
+
+      [SpecVal]
+         ALO = 600.0
+         Divi = 1.0
+         Error1 = 0.01
+         IR = 100.0
+         ISW = 0.0
+         JS = 200.0
+         JTO = 9999.0
+         KK1 = 60.0
+         KK2 = 1.0
+         LS = 50.0
+         P = 0.6
+         SI = 0.3
+      EndSect  // SpecVal
+
+   EndSect  // UHM_Common_Parameters
+
+   [UserDefinedCombinationPeriods]
+      ApplyCombination = false
+      PeriodCount = 0
+   EndSect  // UserDefinedCombinationPeriods
+
+   [MAWOutputOneFile]
+      OutputOnlyOne = false
+      MAWFile = ||
+   EndSect  // MAWOutputOneFile
+
+   [MAWCombNoFile]
+      Apply = true
+      CombFile = ||
+   EndSect  // MAWCombNoFile
+
+   [BasinAreaDefinition]
+      OriginX = 0.0
+      OriginY = 0.0
+      Width = 500.0
+      Height = 350.0
+   EndSect  // BasinAreaDefinition
+
+   [LAYERS]
+   EndSect  // LAYERS
+
+EndSect  // MIKE_RR
+

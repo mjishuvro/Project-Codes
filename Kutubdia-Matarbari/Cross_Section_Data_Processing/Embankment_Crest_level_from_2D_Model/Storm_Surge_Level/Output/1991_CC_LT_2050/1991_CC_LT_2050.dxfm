@@ -1,0 +1,134 @@
+// Created     : 2023-05-23 15:58:06
+// By          : MIKE IO
+// Version     : 1.2.dev0
+
+[DataExtractionFM]
+   [INPUT]
+      Touched = 1
+      file_name = |\\10.0.0.33\New folder (D)\Long Term Strom Surge_2020\Strom Surge Model Setup_2021\Sim\1991\Result\1991_CC_LT_2050.dfsu|
+   EndSect  // INPUT
+
+   [OUTPUTS]
+      Touched = 1
+      MzSEPfsListItemCount = 1
+      number_of_outputs = 1
+      [OUTPUT_1]
+         Touched = 1
+         include = 1
+         title = 'Teknaf'
+         file_name = |.\Teknaf_1991_CC_LT_2050_.dfs0|
+         type = 1
+         format = 0
+         flood_and_dry = 2
+         coordinate_type = 'BTM'
+         zone = 0
+         input_file_name = ||
+         input_format = 1
+         interpolation_type = 2
+         first_time_step = 0
+         last_time_step = 228
+         time_step_frequency = 1
+         number_of_points = 1
+         [POINT_1]
+            name = 'Point 1'
+            x = 742922.0
+            y = 296337.0
+            z = -408.952392578125
+            layer = 1
+         EndSect  // POINT_1
+
+         [LINE]
+            number_of_points = 2
+            [POINT_1]
+               x = 100673.113168155
+               y = 180055.541056678
+               z = -1415.475219726562
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 837625.089299171
+               y = 659443.336973576
+               z = 597.5704345703125
+            EndSect  // POINT_2
+
+            npoints = 20
+         EndSect  // LINE
+
+         [PLANE]
+            number_of_points = 2
+            [POINT_1]
+               x = 100673.113168155
+               y = 180055.541056678
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 837625.089299171
+               y = 659443.336973576
+            EndSect  // POINT_2
+
+            layer_min = 1
+            layer_max = 0
+            z_min = -1415.475219726562
+            z_max = 597.5704345703125
+            npoints_horizontal = 20
+            npoints_vertical = 10
+         EndSect  // PLANE
+
+         [AREA]
+            number_of_points = 4
+            [POINT_1]
+               x = 93303.59340684484
+               y = 175261.663097509
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 93303.59340684484
+               y = 664237.214932745
+            EndSect  // POINT_2
+
+            [POINT_3]
+               x = 844994.6090604812
+               y = 664237.214932745
+            EndSect  // POINT_3
+
+            [POINT_4]
+               x = 844994.6090604812
+               y = 175261.663097509
+            EndSect  // POINT_4
+
+            layer_min = 1
+            layer_max = 0
+            orientation = 0.0
+            x_origo = 100673.113168155
+            x_ds = 38786.94611215874
+            x_npoints = 20
+            y_origo = 180055.541056678
+            y_ds = 38786.94611215874
+            y_npoints = 14
+            z_origo = -1415.475219726562
+            z_ds = 223.6717393663195
+            z_npoints = 10
+         EndSect  // AREA
+
+         [PARAMETERS_2D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_2D
+
+         [PARAMETERS_3D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_3D
+
+         [Discharge]
+            Touched = 0
+         EndSect  // Discharge
+
+      EndSect  // OUTPUT_1
+
+   EndSect  // OUTPUTS
+
+EndSect  // DataExtractionFM
+

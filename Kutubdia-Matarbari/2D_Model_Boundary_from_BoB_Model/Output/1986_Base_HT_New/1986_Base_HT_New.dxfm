@@ -1,0 +1,312 @@
+// Created     : 2023-08-14 12:59:03
+// By          : MIKE IO
+// Version     : 1.2.dev0
+
+[DataExtractionFM]
+   [INPUT]
+      Touched = 1
+      file_name = |\\10.0.0.33\New folder (D)\Long Term Strom Surge_2020\Strom Surge Model Setup_2021\Sim\1986\Result\1986_Base_HT_New.dfsu|
+   EndSect  // INPUT
+
+   [OUTPUTS]
+      Touched = 1
+      MzSEPfsListItemCount = 3
+      number_of_outputs = 3
+      [OUTPUT_1]
+         Touched = 1
+         include = 1
+         title = 'North'
+         file_name = |.\North_1986_Base_HT_New.dfs1|
+         type = 1
+         format = 1
+         flood_and_dry = 2
+         coordinate_type = 'PROJCS["BTM",GEOGCS["Unused",DATUM["UTM Projections",SPHEROID["Everest (India 1830)",6377276.345,300.8017]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",-2000000],PARAMETER["Central_Meridian",90],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]'
+         zone = 0
+         input_file_name = ||
+         input_format = 1
+         interpolation_type = 2
+         first_time_step = 0
+         last_time_step = 228
+         time_step_frequency = 1
+         number_of_points = 0
+         [LINE]
+            number_of_points = 2
+            [POINT_1]
+               x = 690975.2021
+               y = 435935.6138
+               z = 0.0
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 651265.1966
+               y = 435384.2026
+               z = 0.0
+            EndSect  // POINT_2
+
+            npoints = 52
+         EndSect  // LINE
+
+         [PLANE]
+            number_of_points = 0
+            layer_min = 1
+            layer_max = 1
+            z_min = 0.0
+            z_max = 0.0
+            npoints_horizontal = 20
+            npoints_vertical = 10
+         EndSect  // PLANE
+
+         [AREA]
+            number_of_points = 4
+            [POINT_1]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_2
+
+            [POINT_3]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_3
+
+            [POINT_4]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_4
+
+            layer_min = 1
+            layer_max = 0
+            orientation = 0.0
+            x_origo = 0.0
+            x_ds = 0.0
+            x_npoints = 2
+            y_origo = 0.0
+            y_ds = 0.0
+            y_npoints = 2
+            z_origo = 0.0
+            z_ds = 0.0
+            z_npoints = 10
+         EndSect  // AREA
+
+         [PARAMETERS_2D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_2D
+
+         [PARAMETERS_3D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_3D
+
+         [Discharge]
+            Touched = 0
+         EndSect  // Discharge
+
+      EndSect  // OUTPUT_1
+
+      [OUTPUT_2]
+         Touched = 1
+         include = 1
+         title = 'South'
+         file_name = |.\South_1986_Base_HT_New.dfs1|
+         type = 1
+         format = 1
+         flood_and_dry = 2
+         coordinate_type = 'PROJCS["BTM",GEOGCS["Unused",DATUM["UTM Projections",SPHEROID["Everest (India 1830)",6377276.345,300.8017]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",-2000000],PARAMETER["Central_Meridian",90],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]'
+         zone = 0
+         input_file_name = ||
+         input_format = 1
+         interpolation_type = 2
+         first_time_step = 0
+         last_time_step = 228
+         time_step_frequency = 1
+         number_of_points = 0
+         [LINE]
+            number_of_points = 2
+            [POINT_1]
+               x = 653075.7504
+               y = 350266.9932
+               z = 0.0
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 712627.9118
+               y = 350298.0408
+               z = 0.0
+            EndSect  // POINT_2
+
+            npoints = 60
+         EndSect  // LINE
+
+         [PLANE]
+            number_of_points = 0
+            layer_min = 1
+            layer_max = 1
+            z_min = 0.0
+            z_max = 0.0
+            npoints_horizontal = 20
+            npoints_vertical = 10
+         EndSect  // PLANE
+
+         [AREA]
+            number_of_points = 4
+            [POINT_1]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_2
+
+            [POINT_3]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_3
+
+            [POINT_4]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_4
+
+            layer_min = 1
+            layer_max = 0
+            orientation = 0.0
+            x_origo = 0.0
+            x_ds = 0.0
+            x_npoints = 2
+            y_origo = 0.0
+            y_ds = 0.0
+            y_npoints = 2
+            z_origo = 0.0
+            z_ds = 0.0
+            z_npoints = 10
+         EndSect  // AREA
+
+         [PARAMETERS_2D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_2D
+
+         [PARAMETERS_3D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_3D
+
+         [Discharge]
+            Touched = 0
+         EndSect  // Discharge
+
+      EndSect  // OUTPUT_2
+
+      [OUTPUT_3]
+         Touched = 1
+         include = 1
+         title = 'West'
+         file_name = |.\West_1986_Base_HT_New.dfs1|
+         type = 1
+         format = 1
+         flood_and_dry = 2
+         coordinate_type = 'PROJCS["BTM",GEOGCS["Unused",DATUM["UTM Projections",SPHEROID["Everest (India 1830)",6377276.345,300.8017]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",-2000000],PARAMETER["Central_Meridian",90],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]'
+         zone = 0
+         input_file_name = ||
+         input_format = 1
+         interpolation_type = 2
+         first_time_step = 0
+         last_time_step = 228
+         time_step_frequency = 1
+         number_of_points = 0
+         [LINE]
+            number_of_points = 2
+            [POINT_1]
+               x = 651265.1966
+               y = 435384.2026
+               z = 0.0
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 653075.7504
+               y = 350266.9932
+               z = 0.0
+            EndSect  // POINT_2
+
+            npoints = 87
+         EndSect  // LINE
+
+         [PLANE]
+            number_of_points = 0
+            layer_min = 1
+            layer_max = 1
+            z_min = 0.0
+            z_max = 0.0
+            npoints_horizontal = 20
+            npoints_vertical = 10
+         EndSect  // PLANE
+
+         [AREA]
+            number_of_points = 4
+            [POINT_1]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_1
+
+            [POINT_2]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_2
+
+            [POINT_3]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_3
+
+            [POINT_4]
+               x = 0.0
+               y = 0.0
+            EndSect  // POINT_4
+
+            layer_min = 1
+            layer_max = 0
+            orientation = 0.0
+            x_origo = 0.0
+            x_ds = 0.0
+            x_npoints = 2
+            y_origo = 0.0
+            y_ds = 0.0
+            y_npoints = 2
+            z_origo = 0.0
+            z_ds = 0.0
+            z_npoints = 10
+         EndSect  // AREA
+
+         [PARAMETERS_2D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_2D
+
+         [PARAMETERS_3D]
+            Touched = 0
+            ITEM_1 = 1
+            ITEM_2 = 1
+         EndSect  // PARAMETERS_3D
+
+         [Discharge]
+            Touched = 0
+         EndSect  // Discharge
+
+      EndSect  // OUTPUT_3
+
+   EndSect  // OUTPUTS
+
+EndSect  // DataExtractionFM
+

@@ -1,0 +1,137 @@
+// Created     : 2023-08-21 9:21:1
+// DLL         : C:\Program Files (x86)\DHI\MIKE Zero\2023\bin\x64\pfs2004.dll
+// Version     : 21.0.0.16308
+
+[EvaEditor]
+   [BasicInput]
+      SelectionMethod = 1
+      PdsDataType = 1
+      InputFileName = '..\Time Series\location85.dfs0'
+      InputItem = 1
+      OutputFileName = '..\PDS\location85.dfs0'
+      IncludeSeasonalAnalysis = false
+      InterTimeSpecified = false
+      InterLevelSpecified = true
+      Threshold = 0.0
+      AvgAnNum = 0.38
+      InterTime = 1.0
+      InterLevel = 0.5
+      RecordLength = 100.0
+      AmsStartDate = 1990, 1, 1, 0, 0
+      SeasonalStartDate = 1990, 1, 1, 0, 0
+      SeasonalEndDate = 1990, 1, 1, 0, 0
+   EndSect  // BasicInput
+
+   [Dfs2Input]
+      UseDfs2Input = false
+      Dfs2InputFile = ||
+      Dfs2ItemNo = 0
+      X_Range_And_Interval = 0, 0, 0
+      Y_Range_And_Interval = 0, 0, 0
+      Time_Range_And_Interval = 0, 0, 0
+      Dfs2OutputFile = ||
+      UncertaintyCal = true
+      SaveEVS = false
+   EndSect  // Dfs2Input
+
+   [DefineEVS]
+      SelectionMethod = 1
+      InputFileName = '..\PDS\location85.dfs0'
+      OutputFileName = '..\Result\Location85.res'
+      InputItem = 1
+      Title = 'Storm Surge Extreme Value Analysis'
+      Subtitle = 'location85'
+      ItemName = '85'
+      Unit = 'meter'
+      Threshold = 0.0
+      AvgAnNum = 0.38
+   EndSect  // DefineEVS
+
+   [Analysis]
+      RunTest = false
+      TestForTrend = false
+      TestForShiftInMean = false
+      ChiSquaredTest = true
+      KolmogorovSmirnovTest = true
+      SLSCTest = false
+      PPCCTest = false
+      PPCCTest2 = false
+      LogLikelihood = false
+      UncertaintyCalcType = 0
+      PlottingMethod = 0
+      [EvaluatedReturnPeriods]
+         AnnualReturnPeriod = false
+         NoOfItems = 4
+         Item = 10.0
+         Item = 25.0
+         Item = 50.0
+         Item = 100.0
+      EndSect  // EvaluatedReturnPeriods
+
+      [SelectedPeriods]
+         NoOfItems = 0
+      EndSect  // SelectedPeriods
+
+      SplitMethod = 0
+      [SplitDate]
+         Date1 = 1990, 1, 1, 0, 0
+      EndSect  // SplitDate
+
+   EndSect  // Analysis
+
+   [ProbabilityDistribution]
+      NoOfItems = 4
+      [Item1]
+         ItemName = 'LN2/MOM'
+         IsDefaultName = false
+         DistributionType = 7
+         EstimationMethod = 0
+         LogNormalType = 0
+         LogPearsonType = 0
+         EstimateLocationType = 0
+         SampleCorrection = false
+      EndSect  // Item1
+
+      [Item2]
+         ItemName = 'EXP1/MOM'
+         IsDefaultName = false
+         DistributionType = 8
+         EstimationMethod = 0
+         LogNormalType = 0
+         LogPearsonType = 0
+         EstimateLocationType = 0
+         SampleCorrection = false
+      EndSect  // Item2
+
+      [Item3]
+         ItemName = 'TGUM/ML'
+         IsDefaultName = false
+         DistributionType = 10
+         EstimationMethod = 1
+         LogNormalType = 0
+         LogPearsonType = 0
+         EstimateLocationType = 0
+         SampleCorrection = false
+      EndSect  // Item3
+
+      [Item4]
+         ItemName = 'LP3/MOM/LOG'
+         IsDefaultName = false
+         DistributionType = 6
+         EstimationMethod = 0
+         LogNormalType = 0
+         LogPearsonType = 0
+         EstimateLocationType = 0
+         SampleCorrection = false
+      EndSect  // Item4
+
+   EndSect  // ProbabilityDistribution
+
+   [ExtremeValueSection]
+      NoOfItems = 38
+      ExtremeValues = 7.07, 6.09, 3.55, 3.58, 3.67, 3.36, 4, 3.31, 2.93, 3.07, 4.26, 3.48, 5.13, 5.63, 3.71, 3.56, 3.07, 3.58, 2.93, 2.92, 2.87, 2.86, 2.9, 3.1, 5.36, 4.29, 3.42, 3.26, 3.39, 2.75, 4.53, 4.51, 2.55, 3.51, 4.34, 3.92, 3.4, 3.4
+      SampleNo = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   EndSect  // ExtremeValueSection
+
+EndSect  // EvaEditor
+

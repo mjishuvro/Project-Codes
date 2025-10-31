@@ -1,0 +1,149 @@
+// Created    : 2023-05-23 16:16:55
+// Executable : c:\program files (x86)\dhi\mike zero\2023\bin\x64\dataextractionfm.exe
+// Version    : 21.0.0.16308
+
+
+======================= Computing Environment ========================
+  Local machine name              : MJI-CPE
+  Number of subdomains            : 1
+  Local subdomain id              : -1
+  Specified threads per subdomain : 1
+======================================================================
+
+
+======================================================================
+Target: DataExtractionFM
+
+
+
+  Section: INPUT -----------------------------------------------------
+      file_name : \\10.0.0.33\New folder (D)\Long Term Strom Surge_2020\Strom Surge Model Setup_2021\Sim\1983\Result\1983_Base_Org_New.dfsu
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : \\10.0.0.33\New folder (D)\Long Term Strom Surge_2020\Strom Surge Model Setup_2021\Sim\1983\Result\1983_Base_Org_New.dfsu
+  Title  : Area
+
+  Start date  Start time  Sets   Interval  Unit
+  1983-11-05    18:00:00   229       1800  second
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Node id              Grid Codes                    1     197343 Integer
+  X-coord              Geographical coordin 100673.113 837625.089 meter
+  Y-coord              Geographical coordin 180055.541 659443.336 meter
+  Z-coord              Item geometry 3-dime -1415.4752 597.570435 meter
+  Code                 Grid Codes                    0         27 Integer
+  Element id           Grid Codes                    1     299160 Integer
+  Element type         Grid Codes                   21         25 Integer
+  No of nodes          Grid Codes                    3          4 Integer
+  Connectivity         Grid Codes                    1     197343 Integer
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -2.651694    5.52785 meter
+  Total water depth    Water Depth                   0 1162.20581 meter
+----------------------------------------------------------------------
+
+
+========================== Mesh information ==========================
+  Number of elements         : 299160
+  Number of faces            : 0
+  Number of nodes            : 197343
+  Number of sections         : 0
+  Min x-coordinate (m)       : 100673.113
+  Max x-coordinate (m)       : 837625.089
+  Min y-coordinate (m)       : 180055.541
+  Max y-coordinate (m)       : 659443.336
+  Min z-coordinate (m)       : -1415.4752
+  Max z-coordinate (m)       : 597.570435
+======================================================================
+
+
+  Section: OUTPUTS ---------------------------------------------------
+      number_of_outputs : 1
+
+
+    Section: OUTPUT_1 ------------------------------------------------
+        include : 1
+        file_name : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Teknaf_Point\Output\1983_Base_Org_New\Teknaf_1983_Base_Org_New_.dfs0
+        title : Teknaf
+        type : 1
+        format : 0
+        delete_value : 1.E-35 (default)
+        flood_and_dry : 2
+        precision : 2 (default)
+        use_end_time : 0 (default)
+        first_time_step : 0
+        last_time_step : 228
+        time_step_frequency : 1
+        number_of_variables : 0 (default)
+        interpolation_type : 2
+        interpolation_subtype : 1 (default)
+
+
+      Section: PARAMETERS_2D -----------------------------------------
+          item_1 : 1
+          item_2 : 1
+        coordinate_type : BTM
+        input_format : 1
+        number_of_points : 1
+
+
+      Section: POINT_1 -----------------------------------------------
+          name : Point 1
+          x : 742922
+          y : 296337
+
+
+====================== Point Output Information ======================
+
+  Element  Domain           x (m)           y (m)           z (m)
+
+    68867       1  0.74292200E+06  0.29633700E+06 -0.91324641E+00
+======================================================================
+
+
+========================= Output Statistics ==========================
+ 
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Teknaf_Point\Output\1983_Base_Org_New\Teknaf_1983_Base_Org_New_.dfs0
+  Title  : Teknaf
+
+  Start date  Start time  Sets   Interval  Unit
+  1983-11-05    18:00:00   229       1800  second
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Point 1: Surface ele Surface Elevation     -0.965902   3.647771 meter
+  Point 1: Total water Water Depth             0.71894   4.689234 meter
+----------------------------------------------------------------------
+ 
+======================================================================
+
+
+========================== Overall Timings ===========================
+  ------------------------------------------------------------------
+  Task                                      CPU time    Elapsed time
+  ------------------------------------------------------------------
+  Read data                                     0.39            4.81
+  Write data                                    0.02            0.01
+  ------------------------------------------------------------------
+  Total                                         1.88            6.49
+  ------------------------------------------------------------------
+======================================================================
+
+
+============================ Memory Usage ============================
+  Peak memory usage (MB)                                      178.80
+======================================================================
+
+
+========================== Parallelization ===========================
+  Number of threads per subdomain : 1
+  Number of subdomains            : 1
+======================================================================
+ 
+  Number of warnings: 0
+ 
+  Normal run completion

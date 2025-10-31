@@ -1,0 +1,278 @@
+// Created    : 2023-08-14 13:10:41
+// Executable : c:\program files (x86)\dhi\mike zero\2023\bin\x64\dataextractionfm.exe
+// Version    : 21.0.0.16308
+
+
+======================= Computing Environment ========================
+  Local machine name              : MJI-CPE
+  Number of subdomains            : 1
+  Local subdomain id              : -1
+  Specified threads per subdomain : 1
+======================================================================
+
+
+======================================================================
+Target: DataExtractionFM
+
+
+
+  Section: INPUT -----------------------------------------------------
+      file_name : \\10.0.0.33\New folder (D)\Long Term Strom Surge_2020\Strom Surge Model Setup_2021\Sim\1988\Result\1988_CC_Org_2050.dfsu
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : \\10.0.0.33\New folder (D)\Long Term Strom Surge_2020\Strom Surge Model Setup_2021\Sim\1988\Result\1988_CC_Org_2050.dfsu
+  Title  : Area
+
+  Start date  Start time  Sets   Interval  Unit
+  1988-11-25    18:00:00   229       1800  second
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Node id              Grid Codes                    1     197343 Integer
+  X-coord              Geographical coordin 100673.113 837625.089 meter
+  Y-coord              Geographical coordin 180055.541 659443.336 meter
+  Z-coord              Item geometry 3-dime -1415.4752 597.570435 meter
+  Code                 Grid Codes                    0         27 Integer
+  Element id           Grid Codes                    1     299160 Integer
+  Element type         Grid Codes                   21         25 Integer
+  No of nodes          Grid Codes                    3          4 Integer
+  Connectivity         Grid Codes                    1     197343 Integer
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation      -3.57428   5.311099 meter
+  Total water depth    Water Depth                   0 1162.09545 meter
+----------------------------------------------------------------------
+
+
+========================== Mesh information ==========================
+  Number of elements         : 299160
+  Number of faces            : 0
+  Number of nodes            : 197343
+  Number of sections         : 0
+  Min x-coordinate (m)       : 100673.113
+  Max x-coordinate (m)       : 837625.089
+  Min y-coordinate (m)       : 180055.541
+  Max y-coordinate (m)       : 659443.336
+  Min z-coordinate (m)       : -1415.4752
+  Max z-coordinate (m)       : 597.570435
+======================================================================
+
+
+  Section: OUTPUTS ---------------------------------------------------
+      number_of_outputs : 3
+
+
+    Section: OUTPUT_1 ------------------------------------------------
+        include : 1
+        file_name : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Original_Script\dxfm\1988_CC_Org_2050\North_1988_CC_Org_2050.dfs1
+        title : North
+        type : 1
+        format : 1
+        delete_value : 1.E-35 (default)
+        flood_and_dry : 2
+        precision : 2 (default)
+        use_end_time : 0 (default)
+        first_time_step : 0
+        last_time_step : 228
+        time_step_frequency : 1
+        number_of_variables : 0 (default)
+        interpolation_type : 2
+        interpolation_subtype : 1 (default)
+
+
+      Section: PARAMETERS_2D -----------------------------------------
+          item_1 : 1
+          item_2 : 1
+        coordinate_type : PROJCS["BTM",GEOGCS["Unused",DATUM["UTM Projections",SPHEROID["Everest (India 1830)",6377276.345,300.8017]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",-2000000],PARAMETER["Central_Meridian",90],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]
+        input_format : 1
+
+
+      Section: Line --------------------------------------------------
+          number_of_points : 2
+
+
+        Section: POINT_1 ---------------------------------------------
+            x : 690975.202
+            y : 435935.613
+
+
+        Section: POINT_2 ---------------------------------------------
+            x : 651265.196
+            y : 435384.202
+          npoints : 52
+
+
+    Section: OUTPUT_2 ------------------------------------------------
+        include : 1
+        file_name : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Original_Script\dxfm\1988_CC_Org_2050\South_1988_CC_Org_2050.dfs1
+        title : South
+        type : 1
+        format : 1
+        delete_value : 1.E-35 (default)
+        flood_and_dry : 2
+        precision : 2 (default)
+        use_end_time : 0 (default)
+        first_time_step : 0
+        last_time_step : 228
+        time_step_frequency : 1
+        number_of_variables : 0 (default)
+        interpolation_type : 2
+        interpolation_subtype : 1 (default)
+
+
+      Section: PARAMETERS_2D -----------------------------------------
+          item_1 : 1
+          item_2 : 1
+        coordinate_type : PROJCS["BTM",GEOGCS["Unused",DATUM["UTM Projections",SPHEROID["Everest (India 1830)",6377276.345,300.8017]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",-2000000],PARAMETER["Central_Meridian",90],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]
+        input_format : 1
+
+
+      Section: Line --------------------------------------------------
+          number_of_points : 2
+
+
+        Section: POINT_1 ---------------------------------------------
+            x : 653075.750
+            y : 350266.993
+
+
+        Section: POINT_2 ---------------------------------------------
+            x : 712627.911
+            y : 350298.040
+          npoints : 60
+
+
+    Section: OUTPUT_3 ------------------------------------------------
+        include : 1
+        file_name : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Original_Script\dxfm\1988_CC_Org_2050\West_1988_CC_Org_2050.dfs1
+        title : West
+        type : 1
+        format : 1
+        delete_value : 1.E-35 (default)
+        flood_and_dry : 2
+        precision : 2 (default)
+        use_end_time : 0 (default)
+        first_time_step : 0
+        last_time_step : 228
+        time_step_frequency : 1
+        number_of_variables : 0 (default)
+        interpolation_type : 2
+        interpolation_subtype : 1 (default)
+
+
+      Section: PARAMETERS_2D -----------------------------------------
+          item_1 : 1
+          item_2 : 1
+        coordinate_type : PROJCS["BTM",GEOGCS["Unused",DATUM["UTM Projections",SPHEROID["Everest (India 1830)",6377276.345,300.8017]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000],PARAMETER["False_Northing",-2000000],PARAMETER["Central_Meridian",90],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0],UNIT["Meter",1]]
+        input_format : 1
+
+
+      Section: Line --------------------------------------------------
+          number_of_points : 2
+
+
+        Section: POINT_1 ---------------------------------------------
+            x : 651265.196
+            y : 435384.202
+
+
+        Section: POINT_2 ---------------------------------------------
+            x : 653075.750
+            y : 350266.993
+          npoints : 87
+
+
+========================= Output Statistics ==========================
+ 
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Original_Script\dxfm\1988_CC_Org_2050\North_1988_CC_Org_2050.dfs1
+  Title  : North
+
+  Start date  Start time  Sets   Interval  Unit
+  1988-11-25    18:00:00   229       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    52 778.702637            0   meter
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry           -11.487193  -6.655559 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -1.044103   2.661702 meter
+  Total water depth    Water Depth            5.436262  13.777139 meter
+----------------------------------------------------------------------
+ 
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Original_Script\dxfm\1988_CC_Org_2050\South_1988_CC_Org_2050.dfs1
+  Title  : South
+
+  Start date  Start time  Sets   Interval  Unit
+  1988-11-25    18:00:00   229       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    60 1009.35882            0   meter
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry           -27.307259   2.235465 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -0.845937   3.312923 meter
+  Total water depth    Water Depth            2.013531  30.051838 meter
+----------------------------------------------------------------------
+ 
+------------------------- Data File Summary --------------------------
+  Creator: 
+  File   : G:\MJI\SKZ\Script\Extracting Profile Series From DFSU File\Original_Script\dxfm\1988_CC_Org_2050\West_1988_CC_Org_2050.dfs1
+  Title  : West
+
+  Start date  Start time  Sets   Interval  Unit
+  1988-11-25    18:00:00   229       1800  second
+
+  Axis  Sets   Interval  Axis origin  Unit
+     1    87 989.958862            0   meter
+
+  Static items:
+  Item name            Item type               Minimum    Maximum Unit
+  Bathymetry           Bathymetry           -21.691078  -8.533257 meter
+
+  Dynamic items:
+  Item name            Item type               Minimum    Maximum Unit
+  Surface elevation    Surface Elevation     -0.858376   2.536274 meter
+  Total water depth    Water Depth            7.724342  25.495893 meter
+----------------------------------------------------------------------
+ 
+======================================================================
+
+
+========================== Overall Timings ===========================
+  ------------------------------------------------------------------
+  Task                                      CPU time    Elapsed time
+  ------------------------------------------------------------------
+  Read data                                     0.47            4.74
+  Write data                                    0.03            0.05
+  ------------------------------------------------------------------
+  Total                                         2.53            7.06
+  ------------------------------------------------------------------
+======================================================================
+
+
+============================ Memory Usage ============================
+  Peak memory usage (MB)                                      183.51
+======================================================================
+
+
+========================== Parallelization ===========================
+  Number of threads per subdomain : 1
+  Number of subdomains            : 1
+======================================================================
+ 
+  Number of warnings: 0
+ 
+  Normal run completion
