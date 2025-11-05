@@ -10,7 +10,7 @@ These scripts were developed as part of various research and study projects, pri
 * Mikeio
 * Mikeio1d
 * NetCDF4
-* NumPy
+* Numpy
 * Pandas
 * Rioxarray
 * SciPy
